@@ -3,6 +3,7 @@
   margin: 0%;
   padding: 0%;
   text-decoration: none;
+  font-family:'Be Vietnam Pro', sans-serif;
 }
 
 html {
@@ -21,7 +22,6 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 3%;
-  width: 100vw;
 }
 
 header ul {
@@ -31,8 +31,8 @@ header ul {
 }
 
 header ul li a {
-  display: block;
   color: #232c50;
+  font-weight:lighter;
 }
 #menu,
 #menuhamburguesa {
@@ -42,8 +42,9 @@ header ul li a {
 /* ..........main section 1 ................*/
 html {
   background-image: url(/imagenes/bg-tablet-pattern.svg);
-  background-size: auto;
+  background-size: 70%;
 }
+
 .contenedor1 {
   display: flex;
   justify-content: space-around;
@@ -73,8 +74,8 @@ h1 {
 .contenedor2 {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  margin-top: 5%;
+ 
+  margin: 8% 0%;
   flex-wrap: wrap;
 }
 .parrafo2 {
@@ -95,8 +96,8 @@ h1 {
   font-weight: bold;
   padding: 5% 0%;
 }
-.contenedor2lista ul li img {
-  width: 50px;
+.contenedor2lista img {
+  width: 15%;
 }
 
 /* ............main section 3........*/
@@ -105,23 +106,24 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5% 0%;
   color: #232c50;
+  margin-bottom: 5%;
 }
 .tarjetas {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-padding-top: 30px;
+  padding-top: 30px;
 }
 .cars {
   width: 100%;
   width: 350px;
   text-align: center;
 }
-.cars p, .cars h3{
+.cars p,
+.cars h3 {
   margin: 20px;
-  }
+}
 
 #transicion {
   display: none;
@@ -134,7 +136,6 @@ padding-top: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   padding: 2%;
   background-image: url(/imagenes/bg-simplify-section-desktop.svg);
   background-size: 80%;
@@ -142,7 +143,8 @@ padding-top: 30px;
 }
 .footermain h2 {
   color: aliceblue;
-  width: 300px;
+ 
+  
 }
 /* .....pie de pagina..... */
 .piedepag {
@@ -231,8 +233,8 @@ button:hover {
 
 @media screen and (max-width: 480px) {
   html {
-   
-  
+    background-image: url(/imagenes/bg-simplify-section-mobile.svg);
+  width: auto;
   }
   header button {
     display: none;
@@ -278,15 +280,16 @@ button:hover {
   .titulo,
   .parrafo2 {
     text-align: center;
+
   }
   .titulo p {
     margin-left: 30px;
   }
   .tarjetas {
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
   }
-  #tarjeta-reponsive{
-  display: none;
+  #tarjeta-reponsive {
+    display: none;
   }
   #transicion {
     width: 80px;
@@ -298,14 +301,17 @@ button:hover {
   }
 
   #footermain {
+
+    flex-direction: column;
     text-align: center;
     height: 130px;
-    background-size: cover;
+
   }
   .piedepag {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-evenly;
     padding-top: 5%;
+    height: auto;
   }
 }
