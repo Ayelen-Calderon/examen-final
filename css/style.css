@@ -5,13 +5,13 @@
   text-decoration: none;
 }
 
-html body{
+html {
   width: 100vw;
 }
-ul a:hover{
+ul a:hover {
   color: #f3613c;
 }
-ul{
+ul {
   list-style: none;
 }
 /* .................menu de navegacion.................. */
@@ -21,27 +21,26 @@ header {
   align-items: center;
   padding: 3%;
 }
-header nav {
-  flex-basis: 40%;
-}
+
 header ul {
+  width: 400px;
   display: flex;
   justify-content: space-evenly;
- }
+}
 
 header ul li a {
   display: block;
-  color:#232c50;
+  color: #232c50;
 }
-#menu, #menuhamburguesa {
+#menu,
+#menuhamburguesa {
   display: none;
 }
 
-
 /* ..........main section 1 ................*/
-html{
-  background-image:url(/imagenes/bg-tablet-pattern.svg);
-  background-size: auto ;
+html {
+  background-image: url(/imagenes/bg-tablet-pattern.svg);
+  background-size: auto;
 }
 .contenedor1 {
   display: flex;
@@ -57,9 +56,9 @@ h1 {
   color: #232c50;
 }
 .titulo p {
-  padding: 3% 0%;
+  padding: 4% 0%;
   font-size: 1em;
-  width: 280px;
+  width: 300px;
 }
 .imgtitulo {
   width: 380px;
@@ -87,17 +86,15 @@ h1 {
   width: 370px;
   color: #232c50;
 }
-.contenedor2lista p{
+.contenedor2lista p {
   padding-left: 60px;
-  
-  
 }
 .contenedor2lista ul li {
   font-weight: bold;
   padding: 5% 0%;
 }
-.contenedor2lista ul li img{
-width: 50px;
+.contenedor2lista ul li img {
+  width: 50px;
 }
 
 /* ............main section 3........*/
@@ -113,26 +110,33 @@ width: 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
- 
+padding-top: 30px;
 }
 .cars {
   width: 350px;
   text-align: center;
-  margin: 10px;
+}
+.cars p, .cars h3{
+  margin: 20px;
+  }
+
+#transicion {
+  display: none;
 }
 /* .......main footer..... */
 .footermain {
- 
   background-color: #f3613c;
 }
-#footermain{
+#footermain {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   padding: 2%;
   background-image: url(/imagenes/bg-simplify-section-desktop.svg);
-  background-size:80%;
-  background-position:bottom}
+  background-size: 80%;
+  background-position: bottom;
+}
 .footermain h2 {
   color: aliceblue;
   width: 300px;
@@ -149,24 +153,33 @@ width: 50px;
 .piedepag ul {
   list-style: none;
 }
-.piedepag a{
+.piedepag a {
   color: #ffffff;
 }
-.logospiedepag img{
-    padding-bottom: 10%;
-    margin: 3px;
+.logospiedepag img {
+  padding-bottom: 10%;
+  margin: 3px;
 }
-.logospiedepag div ul{
- display: flex;
- justify-content: space-between;
- font-size: 25px;
+.logospiedepag div ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
 }
-#email{
+#listasfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#listasfooter li {
+  width: 120px;
+  padding: 5%;
+}
+#email {
   border-radius: 20px;
   padding: 3px;
   border: #ffffff;
 }
-#enviar{
+#enviar {
   border-radius: 10px;
   border: #f3613c;
   padding: 5px;
@@ -174,92 +187,119 @@ width: 50px;
   background-color: #f3613c;
   color: #ffffff;
 }
-#enviar:hover{
-  background-color:#f3613c9a;
-  
+#enviar:hover {
+  background-color: #f3613c9a;
 }
-#email:hover{
-
+#email:hover {
   border: solid 3px #f3613c;
-  background-color: #e0ddddfb;;
+  background-color: #e0ddddfb;
 }
-#email:focus{
+#email:focus {
   border: solid 5px #f3613c;
   font-size: medium;
 }
 /* .............botones......... */
-button{
-    border-radius: 20px;
-    border: #f3613c;
-    padding: 5px;
-    background-color: #f3613c;
-    box-shadow: 1.5px 3px 10px 4px #afabaac0;;
+button {
+  border-radius: 20px;
+  border: #f3613c;
+  padding: 5px;
+  background-color: #f3613c;
+  box-shadow: 1.5px 3px 10px 4px #afabaac0;
 }
-button a{
-    color: #ffffff;
+button a {
+  color: #ffffff;
 }
-#botonfooter{
-    background-color: #ffffff;
-
+#botonfooter {
+  background-color: #ffffff;
 }
-#botonfooter a{
-    color: #f3613c;
-    font-weight: bold;
+#botonfooter a {
+  color: #f3613c;
+  font-weight: bold;
 }
-#botonfooter:hover{
+#botonfooter:hover {
   background-color: #232c50;
 }
-#botonfooter a:hover{
+#botonfooter a:hover {
   color: #fcf8f7;
 }
-button:hover{
+button:hover {
   background-color: #f3613c9a;
-} 
+}
 
 @media screen and (max-width: 480px) {
-header button{
+  html {
+    width: 100vw;
+    background-size: cover;
+  }
+  header button {
     display: none;
   }
 
-  #menuhamburguesa{
-  display: flex;
-  position: relative;
-  z-index: 100;
-}
-#menuhamburguesa:hover{
-  cursor: pointer;
-}
-  header div{display: flex;
-    justify-content: end;
-   
+  #menuhamburguesa {
+    display: flex;
+    position: relative;
+    z-index: 100;
   }
-  header nav ul{
-    margin-right: 20px;
+  #menuhamburguesa:hover {
+    cursor: pointer;
+  }
+  header div {
+    display: flex;
+    justify-content: end;
+  }
+  header nav ul {
+    width: 150px;
+    margin-right: 28px;
     flex-direction: column;
     text-align: center;
-    background-color: #f3613c;
-    
+    background-color: #f3613cf1;
   }
-  header nav{
-    position:absolute;
-     display: none; 
+  header ul a:hover {
+    color: #232c50;
   }
-header nav ul li a{
-  color: #fcf8f7;
-  font-weight: bold;
-  border-bottom: solid 1px #531f12;
-  padding: 5px;
-}
-#menu:checked ~ nav{
-  display: flex;
-}
-main{
+  header nav {
+    position: absolute;
+    display: none;
+  }
+  header nav ul li a {
+    color: #fcf8f7;
+    font-weight: bold;
+    border-bottom: solid 1px #f3886d;
+    padding: 5px;
+  }
+  #menu:checked ~ nav {
+    display: flex;
+  }
+  .titulo,
+  .parrafo2 {
+    text-align: center;
+  }
+  .titulo p {
+    margin-left: 30px;
+  }
+  .tarjetas {
+    display: flex;
   
-  justify-content: center;
-}
-.piedepag{
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content:space-evenly
-}
+    flex-wrap:nowrap;
+  }
+  #transicion {
+    width: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    color: #f3613ce0;
+    font-size: small;
+  }
+
+  #footermain {
+    text-align: center;
+    height: 130px;
+    background-size: cover;
+  }
+  .piedepag {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5%;
+  }
 }
