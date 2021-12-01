@@ -115,6 +115,7 @@ h1 {
 padding-top: 30px;
 }
 .cars {
+  width: 100%;
   width: 350px;
   text-align: center;
 }
@@ -230,8 +231,8 @@ button:hover {
 
 @media screen and (max-width: 480px) {
   html {
-    width: 100vw;
-    background-size: cover;
+   
+  
   }
   header button {
     display: none;
@@ -282,9 +283,10 @@ button:hover {
     margin-left: 30px;
   }
   .tarjetas {
-    display: flex;
-  
     flex-wrap:nowrap;
+  }
+  #tarjeta-reponsive{
+  display: none;
   }
   #transicion {
     width: 80px;
